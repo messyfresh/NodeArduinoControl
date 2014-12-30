@@ -32,7 +32,13 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="udp.js" />
+    <Content Include="Arduino_Sketch\libraries\Ethernet.cpp" />
+    <Content Include="Arduino_Sketch\libraries\Ethernet.h" />
+    <Content Include="Arduino_Sketch\libraries\EthernetUdp.cpp" />
+    <Content Include="Arduino_Sketch\libraries\EthernetUdp.h" />
+    <Content Include="Arduino_Sketch\libraries\spi.c" />
+    <Content Include="Arduino_Sketch\libraries\spi.h" />
+    <Content Include="Arduino_Sketch\UDPSendReceiveString.ino" />
     <Content Include="bin\www.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.css" />
@@ -41,6 +47,8 @@
     <Content Include="views\layout.jade" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Arduino_Sketch\" />
+    <Folder Include="Arduino_Sketch\libraries\" />
     <Folder Include="bin\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
