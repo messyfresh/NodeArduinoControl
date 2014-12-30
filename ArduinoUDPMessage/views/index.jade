@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+    form(method='post' action='/ledON')
+        input(type='submit' value='LED ON')
+    form(method='post' action='/ledOFF')
+        input(type='submit' value='LED OFF')
